@@ -1,0 +1,433 @@
+/*---------------------------universal styles---------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 22px;
+    font-family: 'Heebo', sans-serif;
+    color: #473729;
+    font-weight: 400;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*styling for linked text*/
+a {                                           
+    text-decoration: none;               
+}
+
+main {
+    position: relative;
+    top: 166px;
+    background-color: #fffff0;
+}
+
+/*----------------------------------icons--------------------------*/
+ion-icon {
+    font-size: 160%;
+    display: block;
+    color: #bd5849;
+    padding: 0 10px;
+    /* position: absolute; */
+}
+
+.facebook {
+    /* right: 80px; */
+    /* right: 375px; */
+}
+
+.insta {
+    /* right: 430px; */
+
+}
+
+/*---------------------------header-------------------------------*/
+header {
+    background-color: #FFFFCD;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    /* align-items: center; */
+    height: 140px;
+}
+
+header img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;       /*past three lines center an image*/
+    padding: 24px 15px;
+    width: 700px;
+}
+
+.image {
+    border-bottom: 1px solid gray;
+}
+
+nav {
+    padding: 0.5em;
+    background-color: #514030;
+    padding-left: 40px;
+    padding-right: 40px;
+    /* border-bottom: 2px solid #fffff0; */
+    
+}
+
+nav p {
+    flex-grow: 1;     /*spaces elements of a flex box*/
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;  
+    padding-left: 20px;
+    letter-spacing: 1px;
+}
+
+header nav {
+    font-size: 18px;
+
+}
+
+nav a:link,
+nav a:visited {
+    color: #ffecdc;
+    transition: border-bottom 0.2s;
+}
+
+header nav a:hover,
+header nav a:active {
+    color: #f78970;
+    border-bottom: 2px solid #f78970;
+}
+
+
+/*---------------------------section one-------------------------------*/
+
+.museum {
+    width: 60%; 
+    margin: 10px 0 0 0;;
+    overflow: hidden;
+}
+
+.museum img {
+    max-width: 100%;        /*reduces size of img to parent container size*/
+    display: block;
+    filter: brightness(110%);
+    transform: scale(1);
+    transition: transform 0.5s, filter 0.5s;
+    overflow: hidden;
+}
+
+.museum img:hover {
+    filter: brightness(70%);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+.visit_info {
+    width: 36%;
+    margin-left: 30px;
+    padding: 30px;
+    font-size:  20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.visit_info p {
+    padding-bottom: 10px;
+}
+
+.visit_info p a {
+    color: #6b281f
+}
+
+.social-media-icons {
+    /* padding-bottom: 30px; */
+}
+#notice {
+    color: #f22a2a;
+    font-weight: 500;
+    font-size: 120%;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    padding: 20px;
+    line-height: 140%;
+    border: 2px double #473729;
+    /* text-decoration: underline; */
+}
+
+
+.button a:link,
+.button a:visited {
+    display: block;
+    background-color: #666652;
+    margin: 30px;
+    padding: 10px 30px;
+    border-radius: 30px;    
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: 1px double #fff;
+}
+
+.button a:hover,
+.button a:active {
+    background-color: #303027;
+    border: 1px double #303027
+}
+
+/*---------------------------feature list-------------------------------*/
+
+.feature-list {
+    padding: 60px 50px;
+    justify-content: center;              /*pair up with width% of element*/
+    background-color: #514030;
+     /* #31271d */
+    color: #fffff0;
+    align-items: safe center;
+}
+
+.feature {
+    padding: 10px;
+    width: 30%;
+    flex-grow: 1;
+    overflow: hidden;
+    margin: 0 auto;
+    min-width: 400px;
+    max-width: 450px;
+}
+
+.feature-image {                                   /*sets image container size first, then do element width 100%*/
+    margin: auto;   /*centers image-container!!!*/
+    width: 100%;
+    height: auto;
+    
+}
+
+.feature-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.feature h3 a {
+    display: block;
+    padding-top: 7px; 
+    padding-left: 10px;
+    color: white;
+}
+
+.feature p {
+    padding-top: 3px;
+    font-style: italic;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.text-box {
+    margin: auto;
+    text-align: left;
+}
+
+.text-box a {
+    color: #ffecdc;
+}
+
+.red {
+    color: red;
+    font-weight: 500;
+}
+
+/*---------------------------section two-------------------------------*/
+
+.section_two {
+    /* margin: 40px; */
+    justify-content: center;
+    padding: 40px 70px;
+    border-bottom: 1px solid #666652;
+    font-size: 19px;
+}
+
+.directions {
+    flex-grow: 1; 
+    margin-right: 20px;
+    width: 60%;
+    justify-content: center;
+    text-align: left;  
+    align-items: center; 
+    font-size: 20px;
+}
+
+.map {
+    flex-grow: 1;
+    margin: 10px 10px 10px 0;
+}
+
+.address {
+    /* margin-left: 50px; */
+    flex-grow: 1;
+}
+
+.closures {
+    flex-grow: 1;            /*use flex-grow for spacing*/
+    width: 30%;
+    border-left: 1px solid #666652;
+    padding-left: 30px;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+
+.closures p {
+    line-height: 160%;
+    padding: 0;
+    margin: 0;
+}
+
+.closures span {
+    display: inline-block;
+    margin: 0;
+    padding-left: 5px;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+/*---------------------------section two-------------------------------*/
+
+.affliations {
+    padding: 50px;
+    font-size: 18px;
+}
+
+.images {
+    justify-content: center;
+    padding: 50px;
+}
+
+.images img {
+    height: 100px;
+    width: auto;
+    padding: 10px;
+}
+
+/*---------------------------footer-------------------------------*/
+
+footer {
+    position: relative;
+    top: 150px;
+    justify-content: center;
+}
+
+footer p {
+    padding: 5px;
+    font-size: 14px;
+}
+
+#footer p a {
+    font-weight: 300;
+}
+
+
+
+/*---------------------media queries--------------------------------*/
+@media only screen and (min-width: 1261px) {
+    /*rulset for > 1260px */
+    .header-mobile {
+        display: none;
+        background-color: #FFFFCD
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    /* ruleset for <= 1260px */
+    .visit_info, .museum {
+        width: 100%;
+    }
+
+
+@media only screen and (min-width: 678px){
+
+    .header-mobile {
+        display: none;
+        background-color: #FFFFCD
+    }
+}
+
+@media only screen and (max-width: 677px) { 
+    /*ruleset for < 678px or mobile*/
+    .closures {
+        border: none;
+        padding-left: 0;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .closures br {
+        display: none;
+    }
+
+    header {
+        display: none;
+    }
+
+    .nav-mobile {
+        background-color:#808067; 
+        color: #FFFFCD;
+        font-size: 30px;
+    }
+
+    .nav-mobile p {
+        border-bottom: 1px solid #666652;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .section-one {
+        margin: 10px 0 0 0;
+    }
+
+    .museum {
+        width: 100%;
+        margin: 0;  
+    }
+
+    .image-mobile {
+        width: 100%;
+        background-color:#FFFFCD;
+        /* padding: 10px auto; */
+    }
+
+    .image-mobile img {
+        max-width: 100%; /*prevents overflow when parent size is smaller than img size*/
+        display: block;  /*gets rid of weird gap between image and element!*/
+        margin: auto;
+    }
+    
+    .visit_info {
+        margin: 0;
+    }
+  
+    .text-box {
+    }
+
+    main {
+        top: 0;          /*reset fixed header*/
+    }
+
+    footer {
+        position: static;        /*overwrites the relative position!*/  
+    }
+
+    .feature {
+        width: 100%;
+    }
+} 
